@@ -63,7 +63,6 @@ display(fornecedores_margem_vestuario_feminino)
 # 8. Quanto que foi vendido ($) no ano de 2009?
 vendas_2009 = dados[dados['Data'].dt.year == 2009]['Vendas'].sum()
 vendas_anuais = dados.groupby(dados['Data'].dt.year)['Vendas'].sum()
-# Aqui você deve analisar as vendas anuais para verificar a tendência.
 print("-----------------8--------------------")
 display(vendas_2009)
 print("-------------------------------------Vendas Anuais---------------------------")
